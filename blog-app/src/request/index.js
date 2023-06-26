@@ -19,7 +19,7 @@ service.interceptors.request.use(config => {
       config.headers['Authorization'] = bearerToken
     }
   }
-  console.log("request headers:", config.headers)
+  console.log("request:", config)
   return config
 }, error => {
   Promise.reject(error)

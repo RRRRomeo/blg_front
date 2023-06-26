@@ -72,8 +72,7 @@
         this.$refs[formName].validate((valid) => {
           if (valid) {
 
-            that.$store.dispatch('register', that.userForm).then((resp) => {
-              console.log("resp:", resp);
+            that.$store.dispatch('register', that.userForm).then(resp => {
               that.$message({message: resp.msg, type: 'success', showClose: true});
               that.$router.push({path: '/'})
             }).catch((error) => {
