@@ -1,9 +1,10 @@
 <template>
   <el-footer class="me-area">
     <div class="me-footer">
-      <p>Designed by
+      <p>
         <strong>
-          <router-link to="/" class="me-login-design-color">ForFun</router-link>
+          <router-link to="/" class="me-login-design-color">开发落</router-link>
+          <a href="https://beian.miit.gov.cn/" target="_blank">浙ICP备2022034650号-1</a>
         </strong>
       </p>
     </div>

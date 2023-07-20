@@ -11,6 +11,7 @@ const service = axios.create({
 
 // request拦截器
 service.interceptors.request.use(config => {
+  console.log("Request URL:", config.baseURL + config.url);
   console.log("sercvice send, token:\n", store.state.token)
   if (config.url != "/login") {
     if (store.state.token) {

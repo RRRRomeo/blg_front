@@ -32,6 +32,9 @@ export function register(account, nickname, password) {
     nickname,
     password
   }
+  const url = '/api/register';
+  console.log('Sending request to:', process.env.BASE_API + url);
+  
   return request({
     url: '/api/register',
     method: 'post',

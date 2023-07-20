@@ -18,10 +18,10 @@
     name: 'CardMe',
     data() {
       return {
-        qq: {title: 'QQ', message: '919431514'},
+        qq: {title: 'QQ', message: '787699239'},
         github: {
           title: 'github',
-          message: '<a target="_blank" href="https://github.com/shimh-develop">https://github.com/shimh-develop</a>'
+          message: '<a target="_blank" href="https://github.com/RRRRomeo">https://github.com/RRRRomeo</a>'
         },
         //username :this.$store.state.name,
       }

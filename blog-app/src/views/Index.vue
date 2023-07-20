@@ -1,5 +1,5 @@
 <template>
-  <div v-title data-title="ForFun Find Yourself">
+  <div v-title data-title="开发落">
     <el-container>
 
       <el-main class="me-articles">
@@ -56,7 +56,7 @@
       getHotArtices() {
         let that = this
         getHotArtices().then(data => {
-          that.hotArticles = data.data
+          that.hotArticles = data.data.data
         }).catch(error => {
           if (error !== 'error') {
             that.$message({type: 'error', message: '最热文章加载失败!', showClose: true})
@@ -68,7 +68,7 @@
       getNewArtices() {
         let that = this
         getNewArtices().then(data => {
-          that.newArticles = data.data
+          that.newArticles = data.data.data
         }).catch(error => {
           if (error !== 'error') {
             that.$message({type: 'error', message: '最新文章加载失败!', showClose: true})
@@ -80,7 +80,7 @@
       getHotTags() {
         let that = this
         getHotTags().then(data => {
-          that.hotTags = data.data
+          that.hotTags = data.data.tags
         }).catch(error => {
           if (error !== 'error') {
             that.$message({type: 'error', message: '最热标签加载失败!', showClose: true})
@@ -89,8 +89,9 @@
         })
       },
       listArchives() {
+        let that = this
         listArchives().then((data => {
-          this.archives = data.data
+          this.archives = data.data.archives
         })).catch(error => {
           if (error !== 'error') {
             that.$message({type: 'error', message: '文章归档加载失败!', showClose: true})
