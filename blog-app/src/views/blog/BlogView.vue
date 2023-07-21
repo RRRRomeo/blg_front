@@ -173,8 +173,8 @@
       getArticle() {
         let that = this
         viewArticle(that.$route.params.id).then(data => {
-          Object.assign(that.article, data.data)
-          that.article.editor.value = data.data.body.content
+          Object.assign(that.article, data.data.article)
+          that.article.editor.value = data.data.article.body.content
 
           that.getCommentsByArticle()
         }).catch(error => {
@@ -204,7 +204,7 @@
       getCommentsByArticle() {
         let that = this
         getCommentsByArticle(that.article.id).then(data => {
-          that.comments = data.data
+          that.comments = data.data.comments
         }).catch(error => {
           if (error !== 'error') {
             that.$message({type: 'error', message: '评论加载失败', showClose: true})

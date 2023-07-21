@@ -14,7 +14,7 @@ module.exports = {
     // 例如将'localhost:8080/'代理到 http://localhost:8888
     proxyTable: {
     	'/': {
-        target: 'http://192.168.10.111:54591',
+        target: 'http://192.168.10.226:54591',
         changeOrigin: true,
         pathRewrite: {
           '^/': ''
@@ -30,7 +30,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

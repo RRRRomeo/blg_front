@@ -6,8 +6,8 @@
       <span><i class="me-icon-job"></i> &nbsp;摸鱼大师</span>
     </div>
     <div class="me-author-tool">
-      <i @click="showTool(qq)" :title="qq.title" class="me-icon-QQ"></i>
-      <i @click="showTool(github)" :title="github.title" class="me-icon-github"></i>
+<!--      <i @click="showTool(qq)" :title="qq.title" class="me-icon-QQ"></i>-->
+<!--      <i @click="showTool(github)" :title="github.title" class="me-icon-github"></i>-->
     </div>
   </el-card>
 
@@ -18,12 +18,13 @@
     name: 'CardMe',
     data() {
       return {
-        qq: {title: 'QQ', message: '787699239'},
-        github: {
-          title: 'github',
-          message: '<a target="_blank" href="https://github.com/RRRRomeo">https://github.com/RRRRomeo</a>'
-        },
+        // qq: {title: 'QQ', message: '787699239'},
+        // github: {
+        //   title: 'github',
+        //   message: '<a target="_blank" href="https://github.com/RRRRomeo">https://github.com/RRRRomeo</a>'
+        // },
         //username :this.$store.state.name,
+        // TODO:  cardme的数据采用,登陆用用户数据更新
       }
     },
     methods: {
